@@ -1,0 +1,62 @@
+* Fall 2022 - Lab 13
+
+* Last name:
+
+* First name:
+
+* GitHub username:
+
+* Notes:
+
+
+  
+* General instructions:
+- Fill in your name and GitHub username on top.
+- Use the Notes section to add any notes to the instructor.
+- The main lab description can be found here:
+  https://maryash.github.io/135/labs/lab_13.html 
+
+* specific instructions and requirementsfor lab 13
+
+This and future labs will start with a mostly empty repository. 
+
+You must:
+
+1. Use ~doctest.h~ based tests to test your solutions unless a
+   specific task says otherwise.
+2. Have a ~Makefile~ with at least the following targets: 
+   1. ~main~ to build *main* which will run your project
+   2. ~tests~ to build *tests* which will run the doctest based tests
+   3. ~clean~ which will remove *.o* files
+3. At least three  ~.cpp~ files - ~main.cpp~, ~tests.cpp~ and at least
+   one more with solutions to the labs. You will also need the
+   appropriate ~.h~ files.
+
+
+* Notes
+
+
+
+* Task Specific instructions
+
+The main lab describes one function for each task. You're solution
+must have a main.cpp with main, tests.cpp with tests and at least one
+more .cpp file (and .h to match) with each of the functions.
+
+You must create a Makefile that includes targets for main, clean, and
+tests and the program should not require any keyboard input. Compiling
+and running tests should show that everything works correctly.
+
+* Task A
+
+Instead of a void function, make the function return as std::string
+and you can then compare that with the desired output in your tests.
+
+* Task E
+
+I am requiring that you complete this task.
+
+* Task F
+
+This is optional but recommended as it's typical of a tech interview
+problem. 
