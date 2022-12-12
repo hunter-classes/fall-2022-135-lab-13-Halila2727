@@ -48,25 +48,47 @@ int sumRange(int left, int right)
     }
 }
 
-int sumArrayInRange(int *arr, int left, int right) //helper function for sumArray
-{
-    return 0; //placeholder
-}
-
 int sumArray(int *arr, int size)
 {
-    return 0; //placeholder
+    if(size > 0)
+    {
+        return *(arr + (size-1)) + sumArray(arr, size-1);
+    }
+    return 0;
 }
 
 
 bool isAlphanumeric(std::string s)
 {
-    return true; //placeholder
+    if(s.length() == 0)
+    {
+        return true;
+    }
+    else if((isalpha(s[0]) || isalnum(s[0])) == false)
+    {
+        return false;
+    }
+
+    s = s.substr(1);
+
+    return isAlphanumeric(s);
 }
 
 bool nestedParens(std::string s)
 {
-    return true; //placeholder
+    if(s.length() == 0)
+    {
+        return true;
+    }
+    else if(s[0] != '(' || s[s.size()-1] != ')')
+    {
+        return false;
+    }
+
+    s = s.substr(1);
+    s = s.substr(0, s.size()-1);
+
+    return nestedParens(s);
 }
 
 bool divisible(int *prices, int size)
